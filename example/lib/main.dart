@@ -2,7 +2,7 @@ import 'package:bruno/bruno.dart';
 import 'sample/l10n/l10n.dart';
 import 'package:example/sample/home/home.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+//import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   BrnIntl.add(ResourceDe.locale, ResourceDe());
@@ -25,9 +25,9 @@ class _MyAppState extends State<MyApp> {
       child: MaterialApp(
         locale: ChangeLocalEvent.locale,
         localizationsDelegates: [
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
+          //GlobalMaterialLocalizations.delegate,
+         // GlobalWidgetsLocalizations.delegate,
+          //GlobalCupertinoLocalizations.delegate,
           BrnLocalizationDelegate.delegate,
         ],
         supportedLocales: [
